@@ -14,6 +14,8 @@ else:
         if q1.upper() == 'SI':
             print(f'¡Correcto!')
             puntos=1
+            break;
         elif q1.upper() == 'NO': 
             print(f'¡La respuesta es incorrecta!')
             puntos=0
+            break;
