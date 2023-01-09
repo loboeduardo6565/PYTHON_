@@ -45,17 +45,6 @@ def app():
 def eliminar_repuesto():
     nombre = input('Indique el nombre del repuesto que desea Eliminar: \r\n')
 
-    try:
-        
-        print('Eliminando un Repuesto existente...')
-    except expression as identifier:
-        print('\r\n El repuesto indicado no existe...\r\n')
-    
-    # Reiniciando la app
-    app()
-
-    nombre = input('Indique el nombre del repuesto que desea buscar: \r\n')
-    # Esta opción es la que usé, sin embargo abajo comentada hay otra opción que usa Juan Pablo De la torre Valdez en su curso Introducción a la programación con python. 
     existe = validar_repuesto(nombre)
     if existe:
         os.remove(DIRECTORIO + nombre + EXTENSION) 
